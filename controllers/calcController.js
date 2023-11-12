@@ -13,10 +13,10 @@ exports.getData = async (req, res) => {
 
 exports.postData = async (req,res) => {
     try{
-    const {userID,inputs, results, chart, date} = req.body
+    const {userID, type, inputs, results, date} = req.body
 
     const newData = new Data({
-        userID, inputs, results, chart, date
+        userID, type, inputs, results,date
     })
     const savedData = await newData.save()
     res.status(201).json(savedData)

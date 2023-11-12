@@ -5,6 +5,10 @@ const calcModel = new mongoose.Schema({
         type: String, 
         required: true
     }, 
+    type: {
+        type: String, 
+        required: true 
+    },
     inputs: {
         type: Array, 
         required: true
@@ -13,10 +17,7 @@ const calcModel = new mongoose.Schema({
         type: Array, 
         required: true
     },
-    chart: {
-        type: Image, 
-        required: true
-    }, 
+    
     date: {
         type: Date, 
         required: true

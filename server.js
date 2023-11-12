@@ -9,7 +9,7 @@ const router = require('./routers/calcRouter')
 
 connectDB()
 
-a
+
 
 app.use(cors(corsOptions))
 
