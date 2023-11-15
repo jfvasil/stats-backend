@@ -18,8 +18,11 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 app.use('/api', router)
 
+app.get("/test", (req, res) => {
+    res.send("<h1>It's working 🤗</h1>")
+  })
 
 
-app.listen(3000, () => {
+app.listen('8080',() => {
     console.log('Server Running on Port 3000')
 })
